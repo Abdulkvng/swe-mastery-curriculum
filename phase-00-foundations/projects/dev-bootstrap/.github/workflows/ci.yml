@@ -1,0 +1,35 @@
+name: CI
+
+# Trigger on every push and PR
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  shellcheck:
+    name: Lint shell scripts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Run shellcheck
+        # ShellCheck finds bash bugs: missing quotes, undefined vars, etc.
+        # If a script has issues, shellcheck exits non-zero, failing the job.
+        uses: ludeeus/action-shellcheck@master
+        with:
+          severity: warning
+          # By default, shellcheck checks all .sh files in the repo.
+
+  validate-yaml:
+    name: Validate YAML
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install yamllint
+        run: pip install yamllint
+
+      - name: Run yamllint
+        run: yamllint -d "{extends: relaxed, rules: {line-length: {max: 120}}}" .

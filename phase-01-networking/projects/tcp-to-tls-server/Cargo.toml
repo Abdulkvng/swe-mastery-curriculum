@@ -1,0 +1,11 @@
+[workspace]
+members = [
+    "stage1-tcp-echo",
+    "stage2-http",
+    "stage3-tls",
+]
+resolver = "2"
+
+[workspace.package]
+edition = "2021"
+authors = ["Kvng"]

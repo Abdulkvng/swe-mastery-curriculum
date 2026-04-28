@@ -1,0 +1,47 @@
+; ~/.gitconfig - global git config
+; Note: user.name and user.email are set by setup.sh interactively
+; so they don't get committed to the public repo.
+
+[init]
+    defaultBranch = main
+
+[pull]
+    rebase = false
+
+[push]
+    autoSetupRemote = true
+    default = simple
+
+[fetch]
+    prune = true
+
+[rerere]
+    enabled = true
+
+[diff]
+    colorMoved = default
+
+[merge]
+    conflictstyle = diff3
+
+[core]
+    excludesfile = ~/.gitignore_global
+    editor = code --wait
+
+[alias]
+    ; Useful one-liners
+    s = status -sb
+    co = checkout
+    sw = switch
+    br = branch
+    ci = commit
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    visual = log --oneline --graph --all -20
+    amend = commit --amend --no-edit
+    please = push --force-with-lease   ; safer force-push
+    nuke = !git clean -fd && git checkout .   ; reset working tree (DANGER)
+    contributors = shortlog -sn --all --no-merges
+
+[color]
+    ui = auto

@@ -1,0 +1,40 @@
+# Environment / secrets
+.env
+.env.local
+*.pem
+*.key
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
+
+# Build artifacts
+**/target/
+**/dist/
+**/build/
+**/node_modules/
+**/.next/
+**/*.exe
+**/*.o
+
+# Generated certs
+**/cert.pem
+**/key.pem
+
+# Go
+**/vendor/
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/venv/
+
+# DB local data
+**/pg_data/
+
+# Temp
+*.tmp
+*.bak
