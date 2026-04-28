@@ -13,7 +13,11 @@ You. Specifically:
 
 ## How to use this
 
-Read top-to-bottom. Each phase **builds on the last** — you can't skip ahead without missing the foundation. Every concept has runnable code. Every keyword you might not know is defined inline the first time it appears, like this:
+Start with [`BEGINNER_MAP.md`](./BEGINNER_MAP.md) before Phase 00.
+
+That file explains the vocabulary and mental model first: terminal, shell, `zsh`, `bash`, `PATH`, Git, GitHub, APIs, databases, and how the phases connect. Read it first if the curriculum feels like a bunch of disconnected tools.
+
+Then read the phases top-to-bottom. Each phase **builds on the last** — you can't skip ahead without missing the foundation. Every concept has runnable code. Every keyword you might not know is defined inline the first time it appears, like this:
 
 > 📖 **Definition — Keyword:** Plain-English explanation here.
 
@@ -23,10 +27,18 @@ When you see a 🧠 icon, that's a "what does this even mean?" deep-dive on a co
 
 When you see a 🎯 icon, that's an interview-relevance flag — pay extra attention.
 
+## Start here, then Phase 00
+
+| Order | File | Why it comes here |
+|---|---|---|
+| Start | [`BEGINNER_MAP.md`](./BEGINNER_MAP.md) | Explains beginner vocabulary and how the whole curriculum connects |
+| 0 | [`phase-00-foundations/README.md`](./phase-00-foundations/README.md) | Teaches the terminal, shell, Git, GitHub, Linux basics, and CI/CD |
+
 ## The 13 Phases
 
 | # | Phase | What you'll master | Languages |
 |---|---|---|---|
+| Start | Beginner Map | Terminal, shell, zsh, bash, PATH, Git vs GitHub, databases, how the phases connect | — |
 | 0 | Foundations & Environment | Linux, bash, Git, GitHub, GitLab, CI/CD basics | Bash |
 | 1 | Networking & Protocols | TCP/IP, HTTP, HTTPS, TLS handshake, encryption | Rust |
 | 2 | OOP & Design Patterns in Go | OOP pillars, singleton, factory, **connection pool** | Go |
@@ -46,6 +58,7 @@ When you see a 🎯 icon, that's an interview-relevance flag — pay extra atten
 ```
 swe-mastery-curriculum/
 ├── README.md                          # this file
+├── BEGINNER_MAP.md                    # read this before Phase 00
 ├── phase-00-foundations/
 │   ├── README.md                      # the chapter
 │   ├── projects/                      # runnable projects
@@ -80,6 +93,7 @@ A live glossary lives at `GLOSSARY.md`. Every defined term ends up there. When i
 
 ## Status
 
+- [x] Beginner Map — orientation before Phase 00
 - [x] Phase 0 — Foundations & Environment
 - [x] Phase 1 — Networking & Protocols
 - [x] Phase 2 — OOP & Design Patterns in Go
