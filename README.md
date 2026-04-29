@@ -1,15 +1,5 @@
 # SWE Mastery Curriculum
 
-> A self-paced, project-driven curriculum to master everything needed for a Datadog ADP Notebooks internship and an Apple New Grad SWE interview. Built for Kvng.
-
-## Who this is for
-
-You. Specifically:
-- USC junior, double major in CS + Business, AI minor
-- Incoming Datadog SWE intern (Summer 2026), Advanced Data Platform - Notebooks team
-- Targeting Apple New Grad SWE
-- Already has ML internship experience (PwC), SWE internship experience (Capital One)
-- Builder of StackSense (AI gateway/observability platform)
 
 ## How to use this
 
